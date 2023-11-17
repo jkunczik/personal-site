@@ -10,7 +10,7 @@ COPY . /usr/src/app
 
 RUN bundle install
 
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--watch", "--incremental", "--config", "_config.yml"] 
 
 EXPOSE 4000
 
